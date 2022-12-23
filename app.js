@@ -1,8 +1,10 @@
+window.addEventListener("load", ()=>{
+  const audio = document.querySelector("#song");
+  audio.play()
+})
 const santaClaus = document.getElementById("santa");
-const audio = document.querySelector("#song");
 let santaIsAppear = false;
 const handleSantaClaus = () => {
-  audio.play();
   santaClaus.style.transform = "translateX(0%)";
   santaIsAppear = true;
 };
