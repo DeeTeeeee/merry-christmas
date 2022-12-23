@@ -1,0 +1,378 @@
+html {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+input,
+textarea,
+select,
+button {
+  outline: none;
+}
+input {
+  line-height: normal;
+}
+label,
+button {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("https://socbay.mobi/publics/uploads/12-2020/post/2-hinh-nen-giang-sinh-2020.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.snowflake {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: white; /* Workaround for Chromium's selective color inversion */
+  border-radius: 50%;
+  filter: drop-shadow(0 0 10px white);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.santaClaus {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(70%);
+  transition: all 2s linear;
+  position: relative;
+}
+.santaClaus img {
+  width: 500px;
+  height: 500px;
+}
+.dialog {
+  width: 600px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(243, 42, 183, 0.938);
+  position: absolute;
+  transform: translateY(-230%) translateX(50%);
+  border-radius: 30px;
+  animation: appear 3s linear;
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.dialog h1 {
+  font-family: "Montserrat Medium";
+  text-align: center;
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+  font-size: 20px;
+  display: block;
+  padding: 20px;
+  text-align: left;
+}
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+span {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+}
+
+span:nth-child(1) {
+  animation: fade-in 1.5s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(2) {
+  animation: fade-in 1.5s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(3) {
+  animation: fade-in 1.5s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(4) {
+  animation: fade-in 1.5s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(5) {
+  animation: fade-in 1.5s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(6) {
+  animation: fade-in 1.5s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(7) {
+  animation: fade-in 1.5s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(8) {
+  animation: fade-in 1.5s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(9) {
+  animation: fade-in 1.5s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(10) {
+  animation: fade-in 1.5s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(11) {
+  animation: fade-in 1.5s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(12) {
+  animation: fade-in 1.5s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(13) {
+  animation: fade-in 1.5s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(14) {
+  animation: fade-in 1.5s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(15) {
+  animation: fade-in 1.5s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(16) {
+  animation: fade-in 1.5s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(17) {
+  animation: fade-in 1.5s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(18) {
+  animation: fade-in 1.5s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(19) {
+  animation: fade-in 1.5s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(20) {
+  animation: fade-in 1.5s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(21) {
+  animation: fade-in 1.5s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(22) {
+  animation: fade-in 1.5s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(23) {
+  animation: fade-in 1.5s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(24) {
+  animation: fade-in 1.5s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(25) {
+  animation: fade-in 1.5s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(26) {
+  animation: fade-in 1.5s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(27) {
+  animation: fade-in 1.5s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(28) {
+  animation: fade-in 1.5s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(29) {
+  animation: fade-in 1.5s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(30) {
+  animation: fade-in 1.5s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(31) {
+  animation: fade-in 1.5s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(32) {
+  animation: fade-in 1.5s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(33) {
+  animation: fade-in 1.5s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(34) {
+  animation: fade-in 1.5s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(35) {
+  animation: fade-in 1.5s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(36) {
+  animation: fade-in 1.5s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(37) {
+  animation: fade-in 1.5s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(38) {
+  animation: fade-in 1.5s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(39) {
+  animation: fade-in 1.5s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(40) {
+  animation: fade-in 1.5s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(41) {
+  animation: fade-in 1.5s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(42) {
+  animation: fade-in 1.5s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(43) {
+  animation: fade-in 1.5s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(44) {
+  animation: fade-in 1.5s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(45) {
+  animation: fade-in 1.5s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(46) {
+  animation: fade-in 1.5s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(47) {
+  animation: fade-in 1.5s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+.point {
+  width: 0;
+  height: 0;
+  border-left: 2vh solid transparent;
+  border-right: 2vh solid transparent;
+  border-top: 10vh solid rgba(243, 42, 183, 0.938);
+  position: absolute;
+  top: 70%;
+  left: 20%;
+  transform: rotate(60deg);
+}
+.noelGift {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: rotate 1s alternate linear infinite;
+  opacity: 1;
+}
+.noelGift-disappear {
+  opacity: 0;
+  transition: all 2s linear;
+}
+.noelGift img {
+  width: 300px;
+  height: 300px;
+  transform: translateY(-210%);
+  transition: all 3s linear;
+}
+@keyframes rotate {
+  50% {
+    transform: rotate(20deg);
+  }
+}
+
+#card {
+  margin: 35%;
+  position: absolute;
+  height: 500px;
+  width: 420px;
+  border-radius: 10px;
+  background-color: white;
+  background-image: url("https://image.freepik.com/free-vector/open-gift-box-with-heart-shape-confetti-burst-explosion-3d-valentines-day-romantic-gift_165143-438.jpg");
+  background-size: 50vh, 70vh;
+  box-shadow: 0px 0px 20px red;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 20px;
+  opacity: 0;
+  left: -200%;
+}
+
+.cardImage {
+  margin: auto;
+
+  border-radius: 50%;
+
+  box-shadow: 0 4px 8px 0 red;
+
+  width: 150px;
+
+  height: 150px;
+}
+
+.cardImage img {
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+h4 {
+  text-align: center;
+
+  -webkit-text-fill-color: rgba(0, 200, 200, 0.1);
+
+  -webkit-background-clip: text;
+  background-image: url("https://i.pinimg.com/originals/20/21/7f/20217f7fa2c9701b8128d8fb153a4db9.gif");
+
+  font-family: "Allura", cursive;
+
+  padding: -2%;
+
+  font-size: 19px;
+
+  overflow: hidden;
+}
+.card-show {
+  left: 0 !important;
+  opacity: 1 !important;
+  transition: all 3s;
+}
