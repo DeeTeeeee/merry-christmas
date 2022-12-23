@@ -89,7 +89,7 @@ body {
   align-items: center;
   background-color: rgba(243, 42, 183, 0.938);
   position: absolute;
-  transform: translateY(-230%) translateX(50%);
+  transform: translateY(-150%) translateX(50%);
   border-radius: 30px;
   animation: appear 3s linear;
 }
@@ -288,7 +288,7 @@ span:nth-child(47) {
   border-right: 2vh solid transparent;
   border-top: 10vh solid rgba(243, 42, 183, 0.938);
   position: absolute;
-  top: 70%;
+  top: 80%;
   left: 20%;
   transform: rotate(60deg);
 }
