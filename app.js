@@ -1,5 +1,9 @@
 window.addEventListener("load", () => {
   const santaClaus = document.getElementById("santa");
+  const audio = document.getElementById("song");
+  document.addEventListener("click", () => {
+    audio.play()
+  })
   let santaIsAppear = false;
   const handleSantaClaus = () => {
     santaClaus.style.transform = "translateX(0%)";
