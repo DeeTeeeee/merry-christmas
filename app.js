@@ -1,16 +1,13 @@
-window.addEventListener("load", ()=>{
-  const audio = document.querySelector("#song");
-  audio.play()
-})
-const santaClaus = document.getElementById("santa");
-let santaIsAppear = false;
-const handleSantaClaus = () => {
-  santaClaus.style.transform = "translateX(0%)";
-  santaIsAppear = true;
-};
-const handleDialog = () => {
-  if (santaIsAppear) {
-    const template = `
+window.addEventListener("load", () => {
+  const santaClaus = document.getElementById("santa");
+  let santaIsAppear = false;
+  const handleSantaClaus = () => {
+    santaClaus.style.transform = "translateX(0%)";
+    santaIsAppear = true;
+  };
+  const handleDialog = () => {
+    if (santaIsAppear) {
+      const template = `
         <div class="dialog">
             <div class="point"></div>
             <h1>
@@ -64,39 +61,39 @@ const handleDialog = () => {
             </h1>
           </div>
     `;
-    santaClaus.insertAdjacentHTML("beforeend", template);
-    const dialog = santaClaus.querySelector(".dialog");
-    setTimeout(() => {
-      dialog.style.display = "none";
-    }, 8000);
-    setTimeout(() => {
-      santaClaus.style.transform = "translateX(-100%)";
-    }, 10000);
-    setTimeout(()=>{
-      handleGift()
-    }, 12000)
-  }
-};
-const handleGift = () => {
-  const template = `
+      santaClaus.insertAdjacentHTML("beforeend", template);
+      const dialog = santaClaus.querySelector(".dialog");
+      setTimeout(() => {
+        dialog.style.display = "none";
+      }, 8000);
+      setTimeout(() => {
+        santaClaus.style.transform = "translateX(-100%)";
+      }, 10000);
+      setTimeout(() => {
+        handleGift();
+      }, 12000);
+    }
+  };
+  const handleGift = () => {
+    const template = `
     <div class="noelGift">
         <img class="noelGiftImage" src="./image/gift.png" alt="">
     </div>
-  `
-  santaClaus.remove()
-  document.body.insertAdjacentHTML("beforeend", template)
-  const gift = document.querySelector('.noelGift')
-  const giftImage = gift.querySelector('.noelGiftImage')
-  setTimeout(()=>{
-    giftImage.style.transform = "translateY(0%)"
-    giftImage.style.cursor = "pointer"
-    giftImage.addEventListener("click", handleClickGift)
-  },2000)
-}
-const handleClickGift = (event) => {
-  event.target.parentNode.classList.add('noelGift-disappear')
-  event.target.parentNode.remove()
-  const template = `
+  `;
+    santaClaus.remove();
+    document.body.insertAdjacentHTML("beforeend", template);
+    const gift = document.querySelector(".noelGift");
+    const giftImage = gift.querySelector(".noelGiftImage");
+    setTimeout(() => {
+      giftImage.style.transform = "translateY(0%)";
+      giftImage.style.cursor = "pointer";
+      giftImage.addEventListener("click", handleClickGift);
+    }, 2000);
+  };
+  const handleClickGift = (event) => {
+    event.target.parentNode.classList.add("noelGift-disappear");
+    event.target.parentNode.remove();
+    const template = `
     <div style="width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; transform: rotate(10deg)">
       <div id="card">
         <h4>💘From Santa Claus With Love💘</h4>
@@ -111,16 +108,17 @@ const handleClickGift = (event) => {
         </h4>
       </div>
     </div>
-  `
-  document.body.insertAdjacentHTML("afterbegin", template)
-  const card = document.querySelector("#card")
-  setTimeout(()=>{
-    card.classList.add("card-show")
-  },100)
-}
-setTimeout(() => {
-  handleSantaClaus();
-}, 1000);
-setTimeout(() => {
-  handleDialog();
-}, 3000);
+  `;
+    document.body.insertAdjacentHTML("afterbegin", template);
+    const card = document.querySelector("#card");
+    setTimeout(() => {
+      card.classList.add("card-show");
+    }, 100);
+  };
+  setTimeout(() => {
+    handleSantaClaus();
+  }, 1000);
+  setTimeout(() => {
+    handleDialog();
+  }, 3000);
+});
